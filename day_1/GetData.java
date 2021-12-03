@@ -10,8 +10,8 @@ public class GetData {
     public static void main(String[] args)  {
 
     }
-    public static String[] getArray() throws FileNotFoundException{
-        Scanner sc = new Scanner(new File("./day_1/input.txt"));
+    public static String[] getArray(String file) throws FileNotFoundException{
+        Scanner sc = new Scanner(new File(file));
         List<String> lines = new ArrayList<String>();
         while (sc.hasNextLine()) {
             lines.add(sc.nextLine());

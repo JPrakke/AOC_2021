@@ -5,7 +5,7 @@ import static java.lang.Integer.parseInt;
 
 public class SonarSweep {
     public static void main(String[] args)throws FileNotFoundException {
-        String[] input = GetData.getArray();
+        String[] input = GetData.getArray("./day_1/input.txt");
         challengeOne(input);
         challengeTwo(input);
     }
@@ -36,5 +36,4 @@ public class SonarSweep {
         }
         System.out.println(counter);
     }
-
 }
